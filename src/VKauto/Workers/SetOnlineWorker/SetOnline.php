@@ -19,7 +19,7 @@ class SetOnline implements WorkerInterface
 
 	public function __construct($minutes = 10, Account $account)
 	{
-		$this->minutes = $minutes;
+		$this->minutes = $minutes * 60;
 		$this->account = $account;
 	}
 
@@ -42,7 +42,7 @@ class SetOnline implements WorkerInterface
 				die;
 			}
 
-			sleep($this->minutes * 60);
+			sleep($this->minutes);
 		}
 	}
 
