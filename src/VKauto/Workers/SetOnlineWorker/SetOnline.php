@@ -11,10 +11,22 @@ use VKauto\CaptchaRecognition\Captcha;
 
 class SetOnline implements WorkerInterface
 {
+	/**
+	 * Состояние работы воркера
+	 * @var boolean
+	 */
 	protected $workInProcess = false;
 
+	/**
+	 * Промежуток между запросами в секундах
+	 * @var int
+	 */
 	public $seconds;
 
+	/**
+	 * Класс аккаунта, с которым работает воркер
+	 * @var VKauto\Auth\Account
+	 */
 	public $account;
 
 	public function __construct($minutes = 10, Account $account)
