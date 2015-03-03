@@ -25,7 +25,7 @@ class SetOnline implements WorkerInterface
 
 	private function loop()
 	{
-		while ($workInProcess)
+		while ($this->workInProcess)
 		{
 			$response = Request::VK(QueryBuilder::buildURL('account.setOnline',
 			[
