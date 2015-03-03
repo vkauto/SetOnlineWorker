@@ -42,7 +42,7 @@ class SetOnline implements WorkerInterface
 				die;
 			}
 
-			sleep($this->minutes);
+			sleep($this->minutes * 60);
 		}
 	}
 
