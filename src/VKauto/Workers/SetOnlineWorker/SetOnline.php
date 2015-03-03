@@ -17,7 +17,7 @@ class SetOnline implements WorkerInterface
 
 	public $account;
 
-	public function __construct($minutes, Account $account)
+	public function __construct($minutes = 10, Account $account)
 	{
 		$this->minutes = $minutes;
 		$this->account = $account;
