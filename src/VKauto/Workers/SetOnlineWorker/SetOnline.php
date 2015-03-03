@@ -1,6 +1,6 @@
 <?php
 
-namespace VKauto\Workers;
+namespace VKauto\Workers\SetOnlineWorker;
 
 use VKauto\Inter\WorkerInterface;
 use VKauto\Auth\Account;
