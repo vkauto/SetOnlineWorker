@@ -2,7 +2,7 @@
 
 namespace VKauto\Workers\SetOnlineWorker;
 
-use VKauto\Inter\WorkerInterface;
+use VKauto\Interfaces\WorkerInterface;
 use VKauto\Auth\Account;
 use VKauto\Utils\QueryBuilder;
 use VKauto\Utils\Request;
