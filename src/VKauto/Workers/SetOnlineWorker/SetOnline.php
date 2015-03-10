@@ -70,7 +70,7 @@ class SetOnline implements WorkerInterface
 		$this->workInProcess = false;
 	}
 
-	public function needsAccountClass()
+	public static function needsAccountClass()
 	{
 		return true;
 	}
