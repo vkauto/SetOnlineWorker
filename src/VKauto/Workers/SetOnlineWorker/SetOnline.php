@@ -61,7 +61,7 @@ class SetOnline implements WorkerInterface
 	public function start()
 	{
 		$this->workInProcess = true;
-		Log::write('Worker started', ['SetOnline']);
+		Log::write('Worker started.', ['SetOnline']);
 		$this->loop();
 	}
 
